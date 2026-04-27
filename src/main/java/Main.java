@@ -18,7 +18,7 @@ public class Main {
         TelegramClient telegramClient = new OkHttpTelegramClient(config.botApiToken());
 
         try (TelegramBotsLongPollingApplication botsApplication = new TelegramBotsLongPollingApplication()) {
-            botsApplication.registerBot(config.botApiToken(), new EchoBot(telegramClient));
+            botsApplication.registerBot(config.botApiToken(), new EchoBot(telegramClient, config));
             System.out.println("Бот запущен");
             Thread.currentThread().join();
         } catch (Exception e) {

@@ -73,38 +73,41 @@ public class UserIdCommand implements Command {
             System.out.println("Ошибка при отправке /myid: " + e.getMessage());
         }
 
-        /**
-         * Reply-кнопки
-
-         KeyboardRow row1 = new KeyboardRow();
-         row1.add("Кнопка 1");
-         row1.add("Кнопка 2");
-
-         KeyboardRow row2 = new KeyboardRow();
-         row2.add("Кнопка 3");
-
-         ReplyKeyboardMarkup replyKeyboardMarkup = ReplyKeyboardMarkup.builder()
-         .keyboardRow(row1)
-         .keyboardRow(row2)
-         .resizeKeyboard(true)
-         .oneTimeKeyboard(true)
-         .inputFieldPlaceholder("Выберете вариант")
-         .build();
-
-         SendMessage sendMessage = SendMessage.builder()
-         .chatId(chatId)
-         .text(answerPattern.formatted(chatId))
-         .replyMarkup(replyKeyboardMarkup)
-         .parseMode("HTML")
-         .build();
-
-         try {
-         client.execute(sendMessage);
-         } catch (TelegramApiException e) {
-         e.printStackTrace();
-         }
-         */
     }
 
-}
+
+////        /**
+////         * Reply-кнопки
+//
+//        KeyboardRow row1 = new KeyboardRow();
+//        row1.add("Кнопка 1");
+//        row1.add("Кнопка 2");
+//
+//        KeyboardRow row2 = new KeyboardRow();
+//        row2.add("Кнопка 3");
+//
+//        ReplyKeyboardMarkup replyKeyboardMarkup = ReplyKeyboardMarkup.builder()
+//                .keyboardRow(row1)
+//                .keyboardRow(row2)
+//                .resizeKeyboard(true)
+//                .oneTimeKeyboard(true)
+//                .inputFieldPlaceholder("Выберете вариант")
+//                .build();
+//
+//        SendMessage sendMessage = SendMessage.builder()
+//                .chatId(chatId)
+//                .text(answerPattern.formatted(chatId))
+//                .replyMarkup(replyKeyboardMarkup)
+//                .parseMode("HTML")
+//                .build();
+//
+//        try {
+//            client.execute(sendMessage);
+//        } catch (TelegramApiException e) {
+//            e.printStackTrace();
+//        }
+//}
+///
+    }
+
 
